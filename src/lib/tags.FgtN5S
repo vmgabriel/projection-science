@@ -1,0 +1,237 @@
+ESTADIO	Estadio.cpp	6;"	d	file:
+Estadio	Estadio.cpp	/^class Estadio$/;"	c	file:
+id	Estadio.cpp	/^        int id;$/;"	m	class:Estadio	file:
+nombre	Estadio.cpp	/^        string nombre;$/;"	m	class:Estadio	file:
+capacidad	Estadio.cpp	/^        int capacidad;$/;"	m	class:Estadio	file:
+ciudad	Estadio.cpp	/^        string ciudad;$/;"	m	class:Estadio	file:
+tabla	Estadio.cpp	/^        string tabla;$/;"	m	class:Estadio	file:
+Estadio	Estadio.cpp	/^        Estadio();$/;"	p	class:Estadio	file:
+Estadio	Estadio.cpp	/^Estadio::Estadio(){tabla="Estadio";}$/;"	f	class:Estadio
+SELECCION	Seleccion.cpp	7;"	d	file:
+Seleccion	Seleccion.cpp	/^class Seleccion$/;"	c	file:
+id	Seleccion.cpp	/^        int id;$/;"	m	class:Seleccion	file:
+fk	Seleccion.cpp	/^        int fk;$/;"	m	class:Seleccion	file:
+nombre	Seleccion.cpp	/^      	string nombre;$/;"	m	class:Seleccion	file:
+tabla	Seleccion.cpp	/^        string tabla;$/;"	m	class:Seleccion	file:
+Seleccion	Seleccion.cpp	/^        Seleccion();$/;"	p	class:Seleccion	file:
+asignarDatos	Seleccion.cpp	/^        void asignarDatos(int,string,int);$/;"	p	class:Seleccion	file:
+cadena	Seleccion.cpp	/^        void cadena(string *);$/;"	p	class:Seleccion	file:
+getTabla	Seleccion.cpp	/^        string getTabla();$/;"	p	class:Seleccion	file:
+getid	Seleccion.cpp	/^        int getid();$/;"	p	class:Seleccion	file:
+getfk	Seleccion.cpp	/^        int getfk();$/;"	p	class:Seleccion	file:
+getNombre	Seleccion.cpp	/^        string getNombre();$/;"	p	class:Seleccion	file:
+Seleccion	Seleccion.cpp	/^Seleccion::Seleccion(){tabla="Seleccion";}$/;"	f	class:Seleccion
+asignarDatos	Seleccion.cpp	/^void Seleccion::asignarDatos (int id,string nom,int fk)$/;"	f	class:Seleccion
+cadena	Seleccion.cpp	/^void Seleccion::cadena(string * cadena)$/;"	f	class:Seleccion
+getTabla	Seleccion.cpp	/^string Seleccion::getTabla(){return tabla;}$/;"	f	class:Seleccion
+getid	Seleccion.cpp	/^int Seleccion::getid(){return id;}$/;"	f	class:Seleccion
+getfk	Seleccion.cpp	/^int Seleccion::getfk(){return fk;}$/;"	f	class:Seleccion
+getNombre	Seleccion.cpp	/^string Seleccion::getNombre(){return nombre;}$/;"	f	class:Seleccion
+EQUIPO	Equipo.cpp	11;"	d	file:
+Equipo	Equipo.cpp	/^class Equipo$/;"	c	file:
+id	Equipo.cpp	/^        int id;$/;"	m	class:Equipo	file:
+nombre	Equipo.cpp	/^        string nombre;$/;"	m	class:Equipo	file:
+confederacion	Equipo.cpp	/^        string confederacion;$/;"	m	class:Equipo	file:
+puestoFifa	Equipo.cpp	/^        int puestoFifa;$/;"	m	class:Equipo	file:
+FK_entrenador	Equipo.cpp	/^        int FK_entrenador;$/;"	m	class:Equipo	file:
+tabla	Equipo.cpp	/^        string tabla;$/;"	m	class:Equipo	file:
+convocados	Equipo.cpp	/^        Lista<Jugador> *convocados;$/;"	m	class:Equipo	file:
+partidos	Equipo.cpp	/^        Lista<Partido> *partidos;$/;"	m	class:Equipo	file:
+Equipo	Equipo.cpp	/^        Equipo();$/;"	p	class:Equipo	file:
+asignarDatos	Equipo.cpp	/^        void asignarDatos(int,string,string,int,int);$/;"	p	class:Equipo	file:
+cadena	Equipo.cpp	/^        void cadena(string *);$/;"	p	class:Equipo	file:
+darJugador	Equipo.cpp	/^        void darJugador(Jugador);$/;"	p	class:Equipo	file:
+getJugador	Equipo.cpp	/^        Jugador getJugador(int);$/;"	p	class:Equipo	file:
+getTabla	Equipo.cpp	/^        string getTabla();$/;"	p	class:Equipo	file:
+getId	Equipo.cpp	/^        int getId();$/;"	p	class:Equipo	file:
+getNombre	Equipo.cpp	/^        string getNombre();$/;"	p	class:Equipo	file:
+getConfederacion	Equipo.cpp	/^        string getConfederacion();$/;"	p	class:Equipo	file:
+getPuesto	Equipo.cpp	/^        int getPuesto();$/;"	p	class:Equipo	file:
+getFk	Equipo.cpp	/^        int getFk();$/;"	p	class:Equipo	file:
+getCantJugadores	Equipo.cpp	/^        int getCantJugadores();$/;"	p	class:Equipo	file:
+Equipo	Equipo.cpp	/^Equipo::Equipo()$/;"	f	class:Equipo
+asignarDatos	Equipo.cpp	/^void Equipo::asignarDatos (int id, string nom, string conf, int puest, int fk)$/;"	f	class:Equipo
+cadena	Equipo.cpp	/^void Equipo::cadena (string * cadena)$/;"	f	class:Equipo
+darJugador	Equipo.cpp	/^void Equipo::darJugador(Jugador jug){convocados->insertarFin (jug);}$/;"	f	class:Equipo
+getTabla	Equipo.cpp	/^string Equipo::getTabla (){return tabla;}$/;"	f	class:Equipo
+getId	Equipo.cpp	/^int Equipo::getId(){return id;}$/;"	f	class:Equipo
+getNombre	Equipo.cpp	/^string Equipo::getNombre(){return nombre;}$/;"	f	class:Equipo
+getConfederacion	Equipo.cpp	/^string Equipo::getConfederacion(){return confederacion;}$/;"	f	class:Equipo
+getPuesto	Equipo.cpp	/^int Equipo::getPuesto(){return puestoFifa;}$/;"	f	class:Equipo
+getFk	Equipo.cpp	/^int Equipo::getFk(){return FK_entrenador;}$/;"	f	class:Equipo
+getJugador	Equipo.cpp	/^Jugador Equipo::getJugador(int pos){return convocados->seleccionar (pos);}$/;"	f	class:Equipo
+getCantJugadores	Equipo.cpp	/^int Equipo::getCantJugadores(){return convocados->cantidadElementos();}$/;"	f	class:Equipo
+LISTA	Lista.cpp	5;"	d	file:
+Nodo	Lista.cpp	/^struct Nodo$/;"	s	file:
+info	Lista.cpp	/^    T info;$/;"	m	struct:Nodo	file:
+sig	Lista.cpp	/^    Nodo<T> *sig, *ant;$/;"	m	struct:Nodo	file:
+ant	Lista.cpp	/^    Nodo<T> *sig, *ant;$/;"	m	struct:Nodo	file:
+Lista	Lista.cpp	/^class Lista$/;"	c	file:
+cab	Lista.cpp	/^        Nodo<T> *cab;$/;"	m	class:Lista	file:
+Lista	Lista.cpp	/^        Lista();$/;"	p	class:Lista	file:
+primerElemento	Lista.cpp	/^        void primerElemento(T dato);$/;"	p	class:Lista	file:
+insertarFin	Lista.cpp	/^        void insertarFin(T dato);$/;"	p	class:Lista	file:
+insertarPos	Lista.cpp	/^        void insertarPos(T dato, int pos);$/;"	p	class:Lista	file:
+modificar	Lista.cpp	/^        bool modificar(int pos, T dato);$/;"	p	class:Lista	file:
+cantidadElementos	Lista.cpp	/^        int cantidadElementos();$/;"	p	class:Lista	file:
+borrar	Lista.cpp	/^        bool borrar(int pos);$/;"	p	class:Lista	file:
+seleccionar	Lista.cpp	/^        T seleccionar(int pos);$/;"	p	class:Lista	file:
+Lista	Lista.cpp	/^Lista<T>::Lista()$/;"	f	class:Lista
+primerElemento	Lista.cpp	/^void Lista<T>::primerElemento(T dato)$/;"	f	class:Lista
+insertarFin	Lista.cpp	/^void Lista<T>::insertarFin(T dato)$/;"	f	class:Lista
+insertarPos	Lista.cpp	/^void Lista<T>::insertarPos(T dato, int pos)$/;"	f	class:Lista
+modificar	Lista.cpp	/^bool Lista<T>::modificar(int pos, T dato)$/;"	f	class:Lista
+cantidadElementos	Lista.cpp	/^int Lista<T>::cantidadElementos()$/;"	f	class:Lista
+borrar	Lista.cpp	/^bool Lista<T>::borrar(int pos)$/;"	f	class:Lista
+seleccionar	Lista.cpp	/^T Lista<T>::seleccionar(int pos)$/;"	f	class:Lista
+ENTRENADOR	Entrenador.cpp	10;"	d	file:
+Entrenador	Entrenador.cpp	/^class Entrenador$/;"	c	file:
+ced	Entrenador.cpp	/^        int ced;$/;"	m	class:Entrenador	file:
+nombre	Entrenador.cpp	/^        string nombre;$/;"	m	class:Entrenador	file:
+apellido	Entrenador.cpp	/^        string apellido;$/;"	m	class:Entrenador	file:
+nacionalidad	Entrenador.cpp	/^        string nacionalidad;$/;"	m	class:Entrenador	file:
+tabla	Entrenador.cpp	/^        string tabla;$/;"	m	class:Entrenador	file:
+trayectoria	Entrenador.cpp	/^        Lista<Seleccion> *trayectoria;$/;"	m	class:Entrenador	file:
+Entrenador	Entrenador.cpp	/^        Entrenador();$/;"	p	class:Entrenador	file:
+asignarDatos	Entrenador.cpp	/^        void asignarDatos(int,string,string,string);$/;"	p	class:Entrenador	file:
+cadena	Entrenador.cpp	/^        void cadena(string *);$/;"	p	class:Entrenador	file:
+agregarSeleccion	Entrenador.cpp	/^        void agregarSeleccion(Seleccion);$/;"	p	class:Entrenador	file:
+getCed	Entrenador.cpp	/^        int getCed();$/;"	p	class:Entrenador	file:
+getFk	Entrenador.cpp	/^        int getFk();$/;"	p	class:Entrenador	file:
+getNombre	Entrenador.cpp	/^        string getNombre();$/;"	p	class:Entrenador	file:
+getapellido	Entrenador.cpp	/^        string getapellido();$/;"	p	class:Entrenador	file:
+getNacionalidad	Entrenador.cpp	/^        string getNacionalidad();$/;"	p	class:Entrenador	file:
+getTabla	Entrenador.cpp	/^        string getTabla();$/;"	p	class:Entrenador	file:
+Entrenador	Entrenador.cpp	/^Entrenador::Entrenador(){$/;"	f	class:Entrenador
+asignarDatos	Entrenador.cpp	/^void Entrenador::asignarDatos(int id,string nom,string ape,string naci)$/;"	f	class:Entrenador
+cadena	Entrenador.cpp	/^void Entrenador::cadena(string * cadena)$/;"	f	class:Entrenador
+agregarSeleccion	Entrenador.cpp	/^void Entrenador::agregarSeleccion(Seleccion temp){trayectoria->insertarFin(temp);}$/;"	f	class:Entrenador
+getCed	Entrenador.cpp	/^int Entrenador::getCed(){return ced;}$/;"	f	class:Entrenador
+getNombre	Entrenador.cpp	/^string Entrenador::getNombre(){return nombre;}$/;"	f	class:Entrenador
+getapellido	Entrenador.cpp	/^string Entrenador::getapellido(){return apellido;}$/;"	f	class:Entrenador
+getNacionalidad	Entrenador.cpp	/^string Entrenador::getNacionalidad(){return nacionalidad;}$/;"	f	class:Entrenador
+getTabla	Entrenador.cpp	/^string Entrenador::getTabla(){return tabla;}$/;"	f	class:Entrenador
+FECHA	Fecha.cpp	9;"	d	file:
+Fecha	Fecha.cpp	/^class Fecha$/;"	c	file:
+dia	Fecha.cpp	/^        int dia,mes,ano,hora,minuto;$/;"	m	class:Fecha	file:
+mes	Fecha.cpp	/^        int dia,mes,ano,hora,minuto;$/;"	m	class:Fecha	file:
+ano	Fecha.cpp	/^        int dia,mes,ano,hora,minuto;$/;"	m	class:Fecha	file:
+hora	Fecha.cpp	/^        int dia,mes,ano,hora,minuto;$/;"	m	class:Fecha	file:
+minuto	Fecha.cpp	/^        int dia,mes,ano,hora,minuto;$/;"	m	class:Fecha	file:
+diasem	Fecha.cpp	/^	    string diasem;$/;"	m	class:Fecha	file:
+poner	Fecha.cpp	/^	    bool poner(int d,int me, int a, int h, int mi);$/;"	p	class:Fecha	file:
+ponerIntervalo	Fecha.cpp	/^        void ponerIntervalo(string ds, int h, int m);$/;"	p	class:Fecha	file:
+ponerfechaact	Fecha.cpp	/^        void ponerfechaact();$/;"	p	class:Fecha	file:
+mayorQue	Fecha.cpp	/^        bool mayorQue(Fecha *comp);$/;"	p	class:Fecha	file:
+menorQue	Fecha.cpp	/^        bool menorQue(Fecha *comp);$/;"	p	class:Fecha	file:
+igualQue	Fecha.cpp	/^        bool igualQue(Fecha *comp);$/;"	p	class:Fecha	file:
+agregar	Fecha.cpp	/^        void agregar(int d, int me, int a, int h, int mi);$/;"	p	class:Fecha	file:
+quitar	Fecha.cpp	/^        void quitar(int d, int me, int a, int h, int mi);$/;"	p	class:Fecha	file:
+imprimir	Fecha.cpp	/^        string imprimir();$/;"	p	class:Fecha	file:
+obtenerDiaOfSemana	Fecha.cpp	/^        string obtenerDiaOfSemana(int d, int m, int a);$/;"	p	class:Fecha	file:
+zeller	Fecha.cpp	/^        int zeller(int y, int m, int d);$/;"	p	class:Fecha	file:
+getdia	Fecha.cpp	/^		int getdia(){return dia;}$/;"	f	class:Fecha
+getmes	Fecha.cpp	/^		int getmes(){return mes;}$/;"	f	class:Fecha
+getano	Fecha.cpp	/^		int getano(){return ano;}$/;"	f	class:Fecha
+gethora	Fecha.cpp	/^		int gethora(){return hora;}$/;"	f	class:Fecha
+getminuto	Fecha.cpp	/^		int getminuto(){return minuto;}$/;"	f	class:Fecha
+poner	Fecha.cpp	/^bool Fecha::poner(int d,int me, int a, int h, int mi)$/;"	f	class:Fecha
+ponerIntervalo	Fecha.cpp	/^void Fecha::ponerIntervalo(string ds, int h, int m)$/;"	f	class:Fecha
+ponerfechaact	Fecha.cpp	/^void Fecha::ponerfechaact()$/;"	f	class:Fecha
+mayorQue	Fecha.cpp	/^bool Fecha::mayorQue(Fecha *comp)$/;"	f	class:Fecha
+menorQue	Fecha.cpp	/^bool Fecha::menorQue(Fecha *comp)$/;"	f	class:Fecha
+igualQue	Fecha.cpp	/^bool Fecha::igualQue(Fecha *comp)$/;"	f	class:Fecha
+agregar	Fecha.cpp	/^void Fecha::agregar(int d, int me, int a, int h, int mi)$/;"	f	class:Fecha
+quitar	Fecha.cpp	/^void Fecha::quitar(int d, int me, int a, int h, int mi)$/;"	f	class:Fecha
+obtenerDiaOfSemana	Fecha.cpp	/^string Fecha::obtenerDiaOfSemana(int d, int m, int a)$/;"	f	class:Fecha
+zeller	Fecha.cpp	/^int Fecha::zeller(int y, int m, int d)$/;"	f	class:Fecha
+JUGADOR	Jugador.cpp	10;"	d	file:
+Jugador	Jugador.cpp	/^class Jugador$/;"	c	file:
+ced	Jugador.cpp	/^        int ced;$/;"	m	class:Jugador	file:
+nombre	Jugador.cpp	/^        string nombre;$/;"	m	class:Jugador	file:
+apellido	Jugador.cpp	/^        string apellido;$/;"	m	class:Jugador	file:
+nacionalidad	Jugador.cpp	/^        string nacionalidad;$/;"	m	class:Jugador	file:
+numero	Jugador.cpp	/^        int numero;$/;"	m	class:Jugador	file:
+posicion	Jugador.cpp	/^        string posicion;$/;"	m	class:Jugador	file:
+fechaNacimiento	Jugador.cpp	/^        Fecha fechaNacimiento;$/;"	m	class:Jugador	file:
+estatura	Jugador.cpp	/^        double estatura;$/;"	m	class:Jugador	file:
+club	Jugador.cpp	/^        string club;$/;"	m	class:Jugador	file:
+numeroGoles	Jugador.cpp	/^        int numeroGoles;$/;"	m	class:Jugador	file:
+fechaSancion	Jugador.cpp	/^        int fechaSancion;$/;"	m	class:Jugador	file:
+titular	Jugador.cpp	/^        bool titular;$/;"	m	class:Jugador	file:
+fkEquipo	Jugador.cpp	/^        int fkEquipo;$/;"	m	class:Jugador	file:
+tabla	Jugador.cpp	/^        string tabla;$/;"	m	class:Jugador	file:
+Jugador	Jugador.cpp	/^        Jugador();$/;"	p	class:Jugador	file:
+asignarDatos	Jugador.cpp	/^        void asignarDatos(int,string,string,string,int,string,Fecha,double,$/;"	p	class:Jugador	file:
+cadena	Jugador.cpp	/^        void cadena(string*);$/;"	p	class:Jugador	file:
+getApellido	Jugador.cpp	/^        string getApellido();$/;"	p	class:Jugador	file:
+getCed	Jugador.cpp	/^        int getCed();$/;"	p	class:Jugador	file:
+getClub	Jugador.cpp	/^        string getClub();$/;"	p	class:Jugador	file:
+getEstatura	Jugador.cpp	/^        double getEstatura();$/;"	p	class:Jugador	file:
+getFechaNacimiento	Jugador.cpp	/^        Fecha getFechaNacimiento();$/;"	p	class:Jugador	file:
+getFechaSancion	Jugador.cpp	/^        int getFechaSancion();$/;"	p	class:Jugador	file:
+getNacionalidad	Jugador.cpp	/^        string getNacionalidad();$/;"	p	class:Jugador	file:
+getNombre	Jugador.cpp	/^        string getNombre();$/;"	p	class:Jugador	file:
+getNumero	Jugador.cpp	/^        int getNumero();$/;"	p	class:Jugador	file:
+getNumeroGoles	Jugador.cpp	/^        int getNumeroGoles();$/;"	p	class:Jugador	file:
+getPosicion	Jugador.cpp	/^        string getPosicion();$/;"	p	class:Jugador	file:
+getTabla	Jugador.cpp	/^        string getTabla();$/;"	p	class:Jugador	file:
+getTitular	Jugador.cpp	/^        bool getTitular();$/;"	p	class:Jugador	file:
+obtenerregistro	Jugador.cpp	/^        string *obtenerregistro();$/;"	p	class:Jugador	file:
+Jugador	Jugador.cpp	/^Jugador::Jugador(){tabla="Jugador";}$/;"	f	class:Jugador
+asignarDatos	Jugador.cpp	/^void Jugador::asignarDatos(int ced,string nombre,string apellido,$/;"	f	class:Jugador
+cadena	Jugador.cpp	/^void Jugador::cadena (string * datos)$/;"	f	class:Jugador
+obtenerregistro	Jugador.cpp	/^string *Jugador::obtenerregistro ()$/;"	f	class:Jugador
+getApellido	Jugador.cpp	/^string Jugador::getApellido(){return apellido;}$/;"	f	class:Jugador
+getCed	Jugador.cpp	/^int Jugador::getCed(){return ced;}$/;"	f	class:Jugador
+getClub	Jugador.cpp	/^string Jugador::getClub(){return club;}$/;"	f	class:Jugador
+getEstatura	Jugador.cpp	/^double Jugador::getEstatura(){return estatura;}$/;"	f	class:Jugador
+getFechaNacimiento	Jugador.cpp	/^Fecha Jugador::getFechaNacimiento(){return fechaNacimiento;}$/;"	f	class:Jugador
+getFechaSancion	Jugador.cpp	/^int Jugador::getFechaSancion(){return fechaSancion;}$/;"	f	class:Jugador
+getNacionalidad	Jugador.cpp	/^string Jugador::getNacionalidad(){return nacionalidad;}$/;"	f	class:Jugador
+getNombre	Jugador.cpp	/^string Jugador::getNombre(){return nombre;}$/;"	f	class:Jugador
+getNumero	Jugador.cpp	/^int Jugador::getNumero(){return numero;}$/;"	f	class:Jugador
+getNumeroGoles	Jugador.cpp	/^int Jugador::getNumeroGoles(){return numeroGoles;}$/;"	f	class:Jugador
+getPosicion	Jugador.cpp	/^string Jugador::getPosicion(){return posicion;}$/;"	f	class:Jugador
+getTabla	Jugador.cpp	/^string Jugador::getTabla(){return tabla;}$/;"	f	class:Jugador
+getTitular	Jugador.cpp	/^bool Jugador::getTitular(){return titular;}$/;"	f	class:Jugador
+GRUPO	Grupo.cpp	10;"	d	file:
+Grupo	Grupo.cpp	/^class Grupo$/;"	c	file:
+cod	Grupo.cpp	/^        char cod;$/;"	m	class:Grupo	file:
+equipos	Grupo.cpp	/^        Lista<Equipo> *equipos;$/;"	m	class:Grupo	file:
+Grupo	Grupo.cpp	/^        Grupo(){equipos=new Lista<Equipo>();}$/;"	f	class:Grupo
+Grupo	Grupo.cpp	/^        Grupo(char);$/;"	p	class:Grupo	file:
+insertarEquipo	Grupo.cpp	/^        void insertarEquipo(Equipo);$/;"	p	class:Grupo	file:
+modificarEquipo	Grupo.cpp	/^        void modificarEquipo(Equipo,int);$/;"	p	class:Grupo	file:
+getEquipo	Grupo.cpp	/^        Equipo getEquipo(int);$/;"	p	class:Grupo	file:
+getCod	Grupo.cpp	/^        char getCod();$/;"	p	class:Grupo	file:
+getcantequipos	Grupo.cpp	/^        int getcantequipos();$/;"	p	class:Grupo	file:
+Grupo	Grupo.cpp	/^Grupo::Grupo(char nom)$/;"	f	class:Grupo
+modificarEquipo	Grupo.cpp	/^void Grupo::modificarEquipo(Equipo Eq,int pos){equipos->modificar (pos, eq);}$/;"	f	class:Grupo
+insertarEquipo	Grupo.cpp	/^void Grupo::insertarEquipo(Equipo eq){equipos->insertarFin(eq);}$/;"	f	class:Grupo
+getCod	Grupo.cpp	/^char Grupo::getCod(){return cod;}$/;"	f	class:Grupo
+getcantequipos	Grupo.cpp	/^int Grupo::getcantequipos(){return equipos->cantidadElementos ();}$/;"	f	class:Grupo
+getEquipo	Grupo.cpp	/^Equipo Grupo::getEquipo(int pos){return equipos->seleccionar(pos);}$/;"	f	class:Grupo
+PARTIDO	Partido.cpp	8;"	d	file:
+Partido	Partido.cpp	/^class Partido$/;"	c	file:
+id	Partido.cpp	/^        int id;$/;"	m	class:Partido	file:
+fecha	Partido.cpp	/^        Fecha fecha;$/;"	m	class:Partido	file:
+FK_Equipo2	Partido.cpp	/^        int FK_Equipo2;$/;"	m	class:Partido	file:
+FK_Estadio	Partido.cpp	/^        int FK_Estadio;$/;"	m	class:Partido	file:
+FK_Resultado	Partido.cpp	/^        int FK_Resultado;$/;"	m	class:Partido	file:
+tabla	Partido.cpp	/^        string tabla;$/;"	m	class:Partido	file:
+Partido	Partido.cpp	/^        Partido();$/;"	p	class:Partido	file:
+Partido	Partido.cpp	/^Partido::Partido(){tabla="Partido";}$/;"	f	class:Partido
+RESULTADO	Resultado.cpp	8;"	d	file:
+Resultado	Resultado.cpp	/^class Resultado$/;"	c	file:
+id	Resultado.cpp	/^        int id;$/;"	m	class:Resultado	file:
+fechapartido	Resultado.cpp	/^        Fecha fechapartido;$/;"	m	class:Resultado	file:
+golesequipo1	Resultado.cpp	/^        int golesequipo1;$/;"	m	class:Resultado	file:
+golesequipo2	Resultado.cpp	/^        int golesequipo2;$/;"	m	class:Resultado	file:
+golesuplementario1	Resultado.cpp	/^        int golesuplementario1;$/;"	m	class:Resultado	file:
+golesuplementario2	Resultado.cpp	/^        int golesuplementario2;$/;"	m	class:Resultado	file:
+golespenales1	Resultado.cpp	/^        int golespenales1;$/;"	m	class:Resultado	file:
+golespenales2	Resultado.cpp	/^        int golespenales2;$/;"	m	class:Resultado	file:
+tabla	Resultado.cpp	/^        string tabla;$/;"	m	class:Resultado	file:
+Resultado	Resultado.cpp	/^        Resultado();$/;"	p	class:Resultado	file:
+Resultado	Resultado.cpp	/^Resultado::Resultado(){tabla="Resultado";}$/;"	f	class:Resultado
